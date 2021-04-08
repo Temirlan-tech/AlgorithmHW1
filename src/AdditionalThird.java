@@ -8,18 +8,16 @@ public class AdditionalThird {
 
         System.out.println("Введите число : ");
 
-        int s = scanner.nextInt();
+        int size = scanner.nextInt();
+        int s = 0;
+        int sum = 0;
 
-        System.out.println("Результат : " + summation(s));
-    }
-
-    private static int summation(int s) {
-
-        int sum;
-
-        sum = (int)(Math.pow(10, s + 1) -
-                10 - (9 * s)) / 81;
-        return sum;
+        for (int i = 1; i <= size ; i++) {
+            s = s*10+1;
+            System.out.println(s + " ");
+            sum = sum + s;
+        }
+        System.out.println("Результат " + sum);
     }
 }
 
